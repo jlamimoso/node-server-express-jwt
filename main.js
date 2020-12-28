@@ -92,6 +92,7 @@ app.post('/logout', (req, res) => {
     res.cookie('Authorization', null, { maxAge:0 }).send();
 });
 
-app.listen(51891, () => {
-    console.log('Authentication service started on port 3000');
+var port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log('Authentication service started on port %s', port);
 });
