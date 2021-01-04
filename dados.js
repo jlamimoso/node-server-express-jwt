@@ -1,9 +1,6 @@
 const allowedOrigins = 
     [
-        'http://192.168.0.139:8080',
-        'http://192.168.0.112:8080',
-        'http://127.0.0.1:8080',
-        'http://www.teste.com:8080'
+        'https://jlam-vuejwt.netlify.app',
     ]
 
 const refreshTokens = [];
