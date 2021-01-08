@@ -18,7 +18,7 @@ app.use(cors({
         callback(null, true);
     } else {
         //callback(null, true);
-        callback(new Error(`Origin: ${origin} is now allowed`))
+        callback(new Error(`Origin: ${origin} error!!!`))
     }
   }
 }))
