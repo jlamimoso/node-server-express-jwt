@@ -17,8 +17,8 @@ app.use(cors({
     if (dados.allowedOrigins.includes(origin)) {
         callback(null, true);
     } else {
-        callback(null, true);
-        //callback(new Error(`Origin: ${origin} is now allowed`))
+        //callback(null, true);
+        callback(new Error(`Origin: ${origin} is now allowed`))
     }
   }
 }))
